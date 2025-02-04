@@ -28,8 +28,8 @@ const BirthdayCountdown = () => {
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
         {/* Floating Sparkles */}
         <Sparkles className="floating text-yellow-300 absolute top-20 left-1/4 h-8 w-8" />
-        <Sparkles className="floating text-pink-300 absolute top-40 right-1/4 h-6 w-6" delay={1} />
-        <Sparkles className="floating text-yellow-300 absolute bottom-20 left-1/3 h-7 w-7" delay={2} />
+        <Sparkles className="floating text-pink-300 absolute top-40 right-1/4 h-6 w-6" />
+        <Sparkles className="floating text-yellow-300 absolute bottom-20 left-1/3 h-7 w-7" />
         
         {/* Main Content */}
         <div className="text-center">
@@ -37,23 +37,27 @@ const BirthdayCountdown = () => {
             Contagem Regressiva
           </h1>
           
-          {/* Countdown Frame */}
-          <div className="rounded-lg bg-white/10 p-4 backdrop-blur-sm">
-            <iframe
-              id="online-alarm-kur-iframe"
-              src="https://embed-countdown.onlinealarmkur.com/pt/#2025-03-03T00:00:00@America%2FSao_Paulo"
-              width="360"
-              height="80"
-              style={{ border: 0 }}
-              className="mx-auto max-w-full"
-            />
+          {/* Countdown Frame with Neon Effect */}
+          <div className="rounded-lg bg-white/5 p-6 backdrop-blur-sm 
+                        shadow-[0_0_20px_rgba(236,72,153,0.5)] 
+                        animate-pulse">
+            <div className="shadow-[0_0_30px_rgba(236,72,153,0.7)]">
+              <iframe
+                id="online-alarm-kur-iframe"
+                src="https://embed-countdown.onlinealarmkur.com/pt/#2025-03-03T00:00:00@America%2FSao_Paulo"
+                width="360"
+                height="80"
+                style={{ border: 0 }}
+                className="mx-auto max-w-full rounded-lg"
+              />
+            </div>
           </div>
           
           {/* Additional Decorative Elements */}
           <div className="mt-8 flex justify-center space-x-4">
             <Sparkles className="sparkle text-yellow-300 h-6 w-6" />
-            <Sparkles className="sparkle text-pink-300 h-6 w-6" delay={0.5} />
-            <Sparkles className="sparkle text-yellow-300 h-6 w-6" delay={1} />
+            <Sparkles className="sparkle text-pink-300 h-6 w-6" />
+            <Sparkles className="sparkle text-yellow-300 h-6 w-6" />
           </div>
         </div>
       </div>
