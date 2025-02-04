@@ -21,8 +21,8 @@ const BirthdayCountdown = () => {
         }}
       />
       
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/20" />
+      {/* Subtle gradient overlay for better readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-100/10 to-pink-200/20" />
 
       {/* Content Container */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
@@ -33,21 +33,24 @@ const BirthdayCountdown = () => {
         
         {/* Main Content */}
         <div className="text-center">
-          <h1 className="mb-8 text-4xl font-bold text-white md:text-6xl">
+          <h1 className="mb-8 text-4xl font-bold text-white md:text-6xl 
+                       drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
             Contagem Regressiva
           </h1>
           
-          {/* Countdown Frame with Neon Effect */}
-          <div className="rounded-lg bg-black/80 p-6 backdrop-blur-sm 
-                        shadow-[0_0_20px_rgba(236,72,153,0.5)] 
+          {/* Countdown Frame with Enhanced Neon Effect */}
+          <div className="rounded-lg bg-gradient-to-r from-pink-500/20 to-purple-500/20 p-6 
+                        backdrop-blur-sm shadow-[0_0_20px_rgba(236,72,153,0.5)] 
                         animate-pulse">
-            <div className="shadow-[0_0_30px_rgba(236,72,153,0.7)]">
+            <div className="shadow-[0_0_30px_rgba(236,72,153,0.7)]
+                          bg-gradient-to-r from-pink-500/10 to-purple-500/10 
+                          rounded-lg p-1">
               <iframe
                 id="online-alarm-kur-iframe"
                 src="https://embed-countdown.onlinealarmkur.com/pt/#2025-03-03T00:00:00@America%2FSao_Paulo"
                 width="360"
                 height="80"
-                style={{ border: 0, backgroundColor: '#000000' }}
+                style={{ border: 0, backgroundColor: 'rgba(0,0,0,0.7)' }}
                 className="mx-auto max-w-full rounded-lg"
               />
             </div>
