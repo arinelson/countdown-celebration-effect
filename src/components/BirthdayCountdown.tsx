@@ -38,7 +38,7 @@ const BirthdayCountdown = () => {
           </h1>
           
           {/* Countdown Frame with Neon Effect */}
-          <div className="rounded-lg bg-white/5 p-6 backdrop-blur-sm 
+          <div className="rounded-lg bg-black/80 p-6 backdrop-blur-sm 
                         shadow-[0_0_20px_rgba(236,72,153,0.5)] 
                         animate-pulse">
             <div className="shadow-[0_0_30px_rgba(236,72,153,0.7)]">
@@ -47,7 +47,7 @@ const BirthdayCountdown = () => {
                 src="https://embed-countdown.onlinealarmkur.com/pt/#2025-03-03T00:00:00@America%2FSao_Paulo"
                 width="360"
                 height="80"
-                style={{ border: 0 }}
+                style={{ border: 0, backgroundColor: '#000000' }}
                 className="mx-auto max-w-full rounded-lg"
               />
             </div>
