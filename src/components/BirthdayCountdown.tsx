@@ -14,15 +14,14 @@ const BirthdayCountdown = () => {
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
         style={{
           backgroundImage: 'url(/lovable-uploads/7f95d394-79a5-4eb7-b61b-1b5ce632ebb5.png)',
-          filter: 'brightness(0.9)'
         }}
       />
       
       {/* Subtle gradient overlay for better readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-100/10 to-pink-200/20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-100/20 to-pink-200/30" />
 
       {/* Content Container */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
@@ -39,19 +38,19 @@ const BirthdayCountdown = () => {
           </h1>
           
           {/* Countdown Frame with Enhanced Neon Effect */}
-          <div className="rounded-lg bg-gradient-to-r from-pink-500/20 to-purple-500/20 p-6 
+          <div className="rounded-lg bg-gradient-to-r from-pink-500/30 to-purple-500/30 p-6 
                         backdrop-blur-sm shadow-[0_0_20px_rgba(236,72,153,0.5)] 
                         animate-pulse">
             <div className="shadow-[0_0_30px_rgba(236,72,153,0.7)]
-                          bg-gradient-to-r from-pink-500/10 to-purple-500/10 
+                          bg-gradient-to-r from-pink-500/20 to-purple-500/20 
                           rounded-lg p-1">
               <iframe
                 id="online-alarm-kur-iframe"
                 src="https://embed-countdown.onlinealarmkur.com/pt/#2025-03-03T00:00:00@America%2FSao_Paulo"
                 width="360"
                 height="80"
-                style={{ border: 0, backgroundColor: 'rgba(0,0,0,0.7)' }}
-                className="mx-auto max-w-full rounded-lg"
+                style={{ border: 0, backgroundColor: 'transparent', color: 'white' }}
+                className="mx-auto max-w-full rounded-lg text-white"
               />
             </div>
           </div>
